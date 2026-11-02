@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  careerpilot:
+    build: .
+    container_name: careerpilot_ai
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - BROWSER_HEADLESS=true
+      - HARVESTER_MODE=IMAP
+    env_file:
+      - .env
+    volumes:
+      - ./job_seeker.db:/app/job_seeker.db
+      - ./screenshots:/app/screenshots
+      - ./resumes:/app/resumes
+

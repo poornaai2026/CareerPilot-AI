@@ -1,0 +1,42 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.ruff_cache/
+
+# Environment & Secrets (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+license_info.json
+
+# Local Databases
+job_seeker.db
+*.sqlite
+*.sqlite3
+
+# Browser Sessions & Profiles (Contains active logins/cookies)
+chrome_debug_profile/
+browser_profile/
+screenshots/
+
+# Personal Resumes & Parsed Profiles
+user_profile.json
+resumes/*.pdf
+*.pdf
+
+# Logs & Output Exports
+*.log
+*.csv
+careerpilot_applications.csv
+
+# OS specific files
+.DS_Store
+Thumbs.db
